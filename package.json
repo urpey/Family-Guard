@@ -1,0 +1,50 @@
+{
+  "name": "bad-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev server.ts",
+    "test": "jest --runInBand --forceExit",
+    "build": "tsc -p .",
+    "jest": "jest --watch"
+  },
+  "repository": "https://gitlab.com/tc794613/bad-project.git",
+  "license": "MIT",
+  "dependencies": {
+    "@types/knex": "^0.16.1",
+    "@types/node": "^17.0.40",
+    "@types/node-fetch": "^2.6.1",
+    "@types/pg": "^8.6.5",
+    "asciichart": "^1.5.25",
+    "bcryptjs": "^2.4.3",
+    "cross-fetch": "^3.1.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "express-session": "^1.17.2",
+    "formidable": "^2.0.1",
+    "grant": "^5.4.21",
+    "jest": "^28.1.0",
+    "knex": "^2.1.0",
+    "listening-on": "^2.0.7",
+    "node-fetch": "^3.2.5",
+    "pg": "^8.7.3",
+    "populate-env": "^2.0.0",
+    "socket.io": "^4.5.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "devDependencies": {
+    "@types/asciichart": "^1.5.6",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/formidable": "^2.0.5",
+    "@types/jest": "^28.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint-config-google": "^0.14.0",
+    "quick-erd": "^2.2.3",
+    "ts-jest": "^28.0.4",
+    "ts-node-dev": "^2.0.0"
+  }
+}

@@ -1,0 +1,53 @@
+user
+----
+id pk
+username varchar(25)
+password_hash char(60)
+email varchar(64)
+phone CHAR(8)
+warning_second integer
+camera integer
+
+
+
+
+action
+----
+id pk
+user_id fk >- user.id
+0 interger
+1 interger
+2 interger
+3 interger
+4 interger
+5 interger
+craeted_at timestamp
+undate_at  timestamp
+
+
+
+movement
+----
+id pk
+pose VARCHAR(60)
+
+
+notification
+----
+id pk
+user_id fk >- user.id
+message_id fk >- message.id
+date VARCHAR(60)
+time VARCHAR(60)
+
+
+
+message
+----
+id pk
+content VARCHAR(60)
+
+
+
+
+

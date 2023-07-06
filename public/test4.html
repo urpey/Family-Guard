@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./test4.css" />
+  </head>
+  <body>
+    <div>Teachable Machine Pose Model</div>
+
+    <div id="twoCameraContainer">
+      <div id="countPersonCameraContainer">
+        <button type="button" onclick="initCountPerson()">StartCount</button>
+        <button type="button" id="stopBtnCount" onclick="stopCountCamera()">Stop</button>
+        <div id="countCanvas"></div>
+        <div id="countLabel-container"></div>
+      </div>
+
+      <div id="movementCameraContainer">
+        <button type="button" onclick="initCheckMovement()">StartMove</button>
+        <button type="button" id="stopBtnMove">Stop</button>
+        <div><canvas id="movementCanvas"></canvas></div>
+        <div id="movementLabel-container"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="test4.js"></script>
+    <script src="test5.js"></script>
+  </body>
+</html>

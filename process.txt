@@ -1,0 +1,82 @@
+Website
+    Tommy:
+    Login/Register Page
+
+    Agatha:
+    Video Page
+    Reminder Page
+    Config Page
+    404 Page
+
+Server
+    Kelvin:
+    server.ts
+
+
+    video.controller.ts
+    video.controller.test.ts
+    video.routes.ts
+    video.routes.test.ts
+    video.service.ts
+    video.service.test.ts
+
+    Tommy:
+    user.controller.ts
+    user.controller.test.ts
+    user.routes.ts
+    user.routes.test.ts
+    user.service.ts
+    user.service.test.ts
+    
+    Agatha:
+    setting.controller.ts
+    setting.controller.test.ts
+    setting.routes.ts
+    setting.routes.test.ts
+    setting.service.ts
+    setting.service.test.ts
+
+
+    grant.ts
+    env.ts
+    db.ts
+    io.ts
+    knex.file.ts
+    session.ts
+    guard.ts
+    hash.ts
+    
+
+Database
+    knex mirgrate (from quick-erd)
+
+
+
+AI model
+movement to recognize
+- stand
+- fall on to the ground
+- sit
+- bend
+
+To be done:
+- can recognize 2 ppl or more
+- can detect when no one spotted on camera
+
+Camera
+
+
+#jsdelivr
+
+
+tasks to do:
+
+
+kelvin - combine 2 teachable machine models together
+kelvin - save movement data to Database
+- get movement data from database and make it into graph (index page design)
+- socket io to emit notification (visitor, no show for 30 mins, fall, wave)
+- browser & mobile: Using the Notifications API (needa change setting page a bit)
+
+
+

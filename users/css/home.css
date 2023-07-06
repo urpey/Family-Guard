@@ -1,0 +1,33 @@
+
+
+.placeholder{
+    height: 12rem;
+}
+
+.box{
+    height: 200px;
+    width: 75vw;
+    margin: auto;
+    border: 1px solid rgb(235, 233, 233);
+	background: linear-gradient( 111.29deg, rgba(255, 255, 255, 0.48) -1.83%, rgba(255, 255, 255, 0) 109.95% );
+	box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(10px);
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+    z-index: 1;
+
+    font-size: 2rem;
+    padding-top:1.5rem;
+    padding-left: 2.5rem;
+
+}
+
+.phone{
+    position: absolute;
+    height: 300px;
+     left: 62%;
+    top: 100px;
+    
+}

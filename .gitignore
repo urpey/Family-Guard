@@ -1,0 +1,10 @@
+node_modules
+.env
+yarn.lock
+dist/
+peoplecounter/
+
+create-sample-action-per-hour.ts
+
+20220615023127_alter.ts
+test.sql

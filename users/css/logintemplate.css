@@ -1,0 +1,211 @@
+/* html {
+    height: 100%;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("../assets/loginbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* .flex-cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.login-box {
+    position: absolute;
+    overflow: scroll;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 720px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(235, 233, 233);
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.85) -1.83%, rgba(255, 255, 255, 0.8) 109.95%);
+    box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(40px);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 5px 5px 15px rgba(63, 63, 63, 0.637);
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #474747;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 23px;
+    line-height: 2.3rem;
+    color: #474747;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #474747;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 23px;
+    color: #474747;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #474747;
+    font-size: 23px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    /* padding: 10px 20px; */
+    color: #474747;
+    font-size: 23px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    /* margin-top: 40px; */
+    letter-spacing: 4px;
+    width: 100%;
+}
+
+
+.cent-text {
+    color: #474747;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+
+.fa-brands {
+    color: rgb(255, 157, 0);
+    font-size: 30px;
+    margin-right: 0.5rem;
+    margin-top: -5px;
+}
+
+.icon {
+    height: 200px;
+    margin-left: 25%;
+    margin-top: -1.5rem;
+}
+
+
+
+.btn-hover {
+    width: 200px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 8px auto;
+    height: 60px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    width: 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-blue {
+    background-image: linear-gradient(to right, #229bcf, #4079da, #03a6dd, #3674d1);
+    /* box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75); */
+}
+
+.btn-hover.color-orange {
+    background-image: linear-gradient(to right, #df9b1c, #e85a19, #f18629, #e85a19);
+}
+
+.reminder {
+    margin-bottom: 30px;
+    color:red;
+}
+.safe {
+    color:green
+}
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+.none {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .login-box {
+        width: 70%;
+        height: 570px;
+        overflow: scroll;
+    }
+
+    .icon {
+        height: 150px;
+    }
+
+    .login-box .user-box input {
+        font-size: 17px;
+        line-height: 1.4rem
+    }
+
+    .login-box .user-box input:focus~label,
+    .login-box .user-box input:valid~label {
+        font-size: 17px;
+    }
+
+    .login-box .user-box label {
+        font-size: 19px;
+    }
+
+    .btn-hover {
+        font-size: 17px;
+        height: 3rem;
+    }
+}

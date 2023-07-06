@@ -1,0 +1,7 @@
+CREATE DATABASE familyguard;
+
+CREATE USER familyguard WITH PASSWORD '123' SUPERUSER;
+
+
+
+

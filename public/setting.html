@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Comfortaa|Montserrat|Quicksand" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+
+</head>
+
+<body>
+    <header class="nav-inner">
+</header>
+
+    <section>
+        <div class="placeholder"></div>
+        <div>
+            <!-- <div class="box">
+                <img class="img-setting" src="assets/personalsession.png">
+                <span class="bold-font">Personal Information:</span>
+                <form id="personal-info" action="/updateinfo" onsubmit="updateInfo(event)">
+                <div>Username : <span class="username">ABC</span></div>
+                <div>Mobile Number : <input class="form-input phone" type="number" name="phone" value="123"></div>
+                <div>Email : <input class="form-input2 email" type="email" name="email" value="123"></div>
+                <button type="submit" class="btn-hover color-orange"><span class="gradient-color">Edit</span></button>
+                </form>
+            </div>
+
+            <div class="box1">
+                <img class="img-setting2" src="assets/warnimgset.png">
+                <span class="bold-font">Warning Time Setting:</span><br>
+                <button class="btn-hover color-blue option-5" onclick="setWarningTime(event,5)"><span class="gradient-color">5s</span></button>
+                <button class="btn-hover color-blue option-10" onclick="setWarningTime(event,10)"><span class="gradient-color">10s</span></button>
+                <button class="btn-hover color-blue option-20" onclick="setWarningTime(event,20)"><span class="gradient-color">20s</span></button>
+                <button class="btn-hover color-blue option-0" onclick="setWarningTime(event,0)"><span class="gradient-color">Disable</span></button>
+            </div>
+
+            <div class="box1">
+                <img class="img-setting3" src="assets/setphone.png">
+                <span class="bold-font">Enable Desktop Notification:</span><br>
+                <button class="btn-hover btn-hover4 color-orange notification-on"><span class="gradient-color">Enable</span></button>
+            </div>
+        </div> -->
+
+
+        <div class="line-col terminal-window white-line">
+            <div class="terminal-header white-bg">
+                Personal Information:
+                <div>
+                    <div class="buttons green"></div>
+                    <div class="buttons yellow"></div>
+                    <div class="buttons red"></div>
+                </div>
+            </div>
+            <div class="terminal-session">
+                <div class="flex-col flex-col1">
+                    <img class="img-setting3" src="assets/personalsession.png">
+                    <!-- <img class="new-pic2" src="assets/clock-1.png"> -->
+                    <div class="bigger-col">
+                        <form id="personal-info" action="/updateinfo" onsubmit="updateInfo(event)">
+                            <div>Username : <span class="username">ABC</span></div>
+                            <div>Mobile Number : <input class="form-input phone" type="number" name="phone" value="123"></div>
+                            <div>Email : <input class="form-input2 email" type="email" name="email" value="123"></div>
+                            <button type="submit" class="btn-hover color-orange"><span class="gradient-color">Edit</span></button>
+                            </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="line-col terminal-window1 white-line">
+            <div class="terminal-header white-bg">
+                Warning Time Setting:
+                <div>
+                    <div class="buttons green"></div>
+                    <div class="buttons yellow"></div>
+                    <div class="buttons red"></div>
+                </div>
+            </div>
+            <div class="terminal-session">
+                <div class="flex-col flex-col1">
+                    <!-- <img class="new-pic2" src="assets/clock-1.png"> -->
+                    <div class="bigger-col">
+                        <img class="img-setting3" src="assets/warnimgset.png">
+                        <button class="btn-hover color-blue option-5" onclick="setWarningTime(event,5)"><span class="gradient-color">5s</span></button>
+                        <button class="btn-hover color-blue option-10" onclick="setWarningTime(event,10)"><span class="gradient-color">10s</span></button>
+                        <button class="btn-hover color-blue option-20" onclick="setWarningTime(event,20)"><span class="gradient-color">20s</span></button>
+                        <button class="btn-hover color-blue option-0" onclick="setWarningTime(event,0)"><span class="gradient-color">Disable</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="line-col terminal-window1 white-line">
+            <div class="terminal-header white-bg">
+                Enable Desktop Notification:
+                <div>
+                    <div class="buttons green"></div>
+                    <div class="buttons yellow"></div>
+                    <div class="buttons red"></div>
+                </div>
+            </div>
+            <div class="terminal-session">
+                <div class="flex-col flex-col1">
+                    <!-- <img class="new-pic2" src="assets/clock-1.png"> -->
+                    <div class="bigger-col">
+                        <img class="img-setting3" src="assets/setphone.png">
+                        <button class="btn-hover btn-hover4 color-orange notification-on"><span class="gradient-color">Enable</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="/socket.io/socket.io.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/setting.js"></script>
+</body>
+
+</html>
+
+
